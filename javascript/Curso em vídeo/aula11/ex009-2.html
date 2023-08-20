@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex009-2</title>
+</head>
+
+<body>
+    <h1>Informe o seu país de origem:</h1>
+    <input type="string" name="country" id="country" placeholder="País">
+    <input type="button" value="Confere" onclick="confere()">
+
+    <script>
+
+        function confere(){
+            var pais = window.document.getElementById("country").value
+            document.write(`Você é do(a) ${pais}.`)
+            if(pais == "Brasil"){
+                document.write("<br>Você é brasileiro(a)!")
+            }else{
+                document.write("<br>Você é estrangeiro(a)!")
+            }
+        }
+    </script>
+</body>
+</html>

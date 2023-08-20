@@ -1,0 +1,5 @@
+nome = input("Digite seu nome completo: ").strip()
+nome = nome.split()
+print("Muito prazer em te conhecer, seu corno arrombado!")
+print("A porra do seu primeiro nome é {}.".format(nome[0]))
+print("A desgraça do seu último nome é {}.".format(nome[len(nome)-1]))

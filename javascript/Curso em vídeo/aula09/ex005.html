@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX005</title>
+    <style>
+        body{
+            background-color: rgb(22, 158, 106);
+            color: blanchedalmond;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apendendo DOM</h1>
+    <p>Paragrafo mais brabo do oeste</p>
+    <p>Naruto é <strong>RUIM PRA CARALho</strong>!!!!! Passar bem.</p>
+    <div id="salsicha">Everson Zóio</div>
+    
+    <script>
+        var paragrafo = window.document.getElementsByTagName('p')[1]
+        paragrafo.style.background = 'black';
+        salsicha = document.querySelector('div#salsicha')
+        salsicha.style.background = "blue";
+    </script>
+</body>
+</html>
